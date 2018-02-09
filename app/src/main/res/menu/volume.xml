@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/volume_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/volume_call"
+            android:title="Call"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/volume_system"
+            android:title="System"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/volume_ring"
+            android:title="Ring"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/volume_music"
+            android:title="Music"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/volume_alarm"
+            android:title="Alarm"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/volume_notification"
+            android:title="Notification"
+            app:showAsAction="never" />
+    </group>
+
+
+</menu>

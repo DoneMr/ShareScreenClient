@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ShareScreenClient</string>
+    <string name="toggle_on">DISCONNECT</string>
+    <string name="toggle_off">CONNECT</string>
+</resources>

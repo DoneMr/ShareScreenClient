@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/OverFlowMenuTheme"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white">
+
+        <ToggleButton
+            android:id="@+id/tb_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:checked="false"
+            android:textOff="@string/toggle_off"
+            android:textOn="@string/toggle_on" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.done.sharescreenclient.view.MySurfaceView
+            android:id="@+id/sfv_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_server_status"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@color/red" />
+
+            <Button
+                android:id="@+id/btn_connect"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_status"
+                android:text="CONNECT"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/btn_disconnect"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_status"
+                android:text="DISCONNECT"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_setup"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_status"
+                android:text="SETUP" />
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_status"
+                android:text="PLAY" />
+
+            <Button
+                android:id="@+id/btn_teardown"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_status"
+                android:text="TEARDOWN" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_status"
+                android:text="BACK" />
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_status"
+                android:text="HOME" />
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_status"
+                android:text="MENU"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_volume_up"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_status"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btn_volume_low"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_status"
+                android:text="-" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
